@@ -44,10 +44,10 @@ def index():
             print(review_html)
             reviewboxes = review_html.find_all('div', {'class': 'lister-item-content'})
 
-            filename = searchString + ".csv"
-            fw = open(filename, "w")
-            headers = "MOVIE NAME,REVIEW DATE,REVIEWER,RATING,TITLE,REVIEW \n"
-            fw.write(headers)
+            # filename = searchString + ".csv"
+            # fw = open(filename, "w")
+            # headers = "MOVIE NAME,REVIEW DATE,REVIEWER,RATING,TITLE,REVIEW \n"
+            # fw.write(headers)
             reviews = []
             for commentbox in reviewboxes:
 
